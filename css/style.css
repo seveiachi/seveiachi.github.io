@@ -1,6 +1,6 @@
 body {
 	background-color: #000000;
-	color: #00Ff00;
+	color: #008000;
 }
 table {
 	margin: 10px;
@@ -9,5 +9,9 @@ table {
 	border-color: #00FF00;
 }
 a {
+	color: #00C000;
 	text-decoration: none;
 }
+a:hover {
+	color: #00FF00;
+]
