@@ -3,6 +3,7 @@
 	<head>
 		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
 		<style type="text/css">
 			body {
 				background-color: #000000;
@@ -11,11 +12,12 @@
 				font-size: 10px;
 				font-weight: bold;
 			}
-			tr {
+			table {
 				margin: 10px;
 				padding: 10px;
-				border-width: 8px;
-				border-color: #00FF00;
+				border: 2px solid #008000;
+				text-align: center;
+				width: 33.333%;
 			}
 			a {
 				color: #00C000;
@@ -28,12 +30,47 @@
 		</style>
 		<title>seveiachi's garbage bin</title>
 	</head>
-	<body>
-		<table>
-			<tr><td>
-				<p>stuff</p>
-				<p><a href="#">stuff 2</a></p>
+	<body><center>
+		<table><tbody>
+			<tr><td style="border-bottom: thin solid #00FF00;padding-bottom:10px;">
+				<div style="font-size:32px;font-color:#00FF00" onclick="alert('credit to siph0n for the incredible css idea')">
+					<span style="border-bottom:thin dashed #008000;color:#00ff00;">s</span><span style="border-bottom:thin dashed #008000;color:#00c000;">e</span><span style="border-bottom:thin dashed #008000;color:#008000;">v</span><span style="border-bottom:thin dashed #008000;color:#00ff00;">e</span><span style="border-bottom:thin dashed #008000;color:#00c000;">i</span><span style="border-bottom:thin dashed #008000;color:#008000;">a</span><span style="border-bottom:thin dashed #008000;color:#00ff00;">c</span><span style="border-bottom:thin dashed #008000;color:#00c000;">h</span><span style="border-bottom:thin dashed #008000;color:#008000;">i</span>
+				</div>
 			</td></tr>
-		</table>
-	</body>
+		
+			<tr><td style="border-bottom: thin solid #00FF00;padding-bottom:5px;">
+				<p id="header"></p>
+			</td></tr>
+			<script type="text/javascript">
+				var pages = ["index","bin","dox","hax","pages","photos","misc","contact"];
+				for(var i = 0; i <= pages.length-1; i++){
+					document.getElementById("header").innerHTML = document.getElementById("header").innerHTML + "\t[ <a href='" + pages[i] + ".html'>" + pages[i] + "</a> ]\t";
+				}
+			</script>
+			
+			<tr><td style="">
+			<table width="100%"><tbody>
+				<tr>
+					<td>[ DATE ]</td>
+					<td>[ FILENAME ]</td>
+					<td width="35">[ TYPE ]</td>
+					<td width="9"></td>
+					<td width="9"></td>
+					<td width="9"></td>
+					<td width="45">[ DESC ]</td>
+				</tr>
+				
+				<tr>
+					<td nowrap="nowrap" width="62">2017-03-28</td>
+					<td nowrap="nowrap" width="375"><a href="dox/cc.txt">cubecorner justin</a></td>
+					<td nowrap="nowrap" width="40" align="left">Plaintext</td>
+					<td nowrap="nowrap" width="9" valign="middle" align="center"></td><td width="9" valign="middle" align="center"></td>
+					<td nowrap="nowrap" width="9" valign="middle" align="center"><a href="dox/cc.txt" download>D</a></td>
+					<td nowrap="nowrap" width="135">dumbass</td>
+				</tr>
+				</tbody></table>
+			</td></tr>
+			
+		</tbody></table>
+	</center></body>
 </html>
